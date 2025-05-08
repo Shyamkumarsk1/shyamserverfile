@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitEdge Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 3.5em;
+      color: #fff;
+      text-shadow: 0px 0px 10px #000;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-top: 20px;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #00ffcc;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #00bfa6;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h3 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #00ffcc;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h4 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      color: #ccc;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #111;
+      color: #888;
+    }
+
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 2.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FitEdge</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Transform Your Body, Transform Your Life</h2>
+      <p>Join the ultimate fitness revolution. Train hard. Stay strong. Live fit.</p>
+      <a href="#about" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Gym Training">
+    <div class="about-text">
+      <h3>About FitEdge</h3>
+      <p>FitEdge is not just a gym — it's a lifestyle. With world-class trainers, cutting-edge equipment, and an unmatched fitness community, we help you reach your goals faster and smarter. Whether you're a beginner or a pro, we’ve got something to push your limits.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2 style="text-align:center; color:#00ffcc; margin-bottom: 40px;">Our Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h4>💪 Personal Training</h4>
+        <p>Certified coaches tailor your workouts to your personal goals.</p>
+      </div>
+      <div class="feature">
+        <h4>🧘‍♀️ Yoga & Wellness</h4>
+        <p>Balance your mind and body with relaxing and energizing sessions.</p>
+      </div>
+      <div class="feature">
+        <h4>🔥 HIIT Classes</h4>
+        <p>Burn calories fast with High-Intensity Interval Training led by experts.</p>
+      </div>
+      <div class="feature">
+        <h4>🥗 Diet Plans</h4>
+        <p>Customized nutrition guidance for muscle gain or fat loss.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>📞 Contact us: +91-134567890 | 📧 support@fitedge.com</p>
+    <p>© 2025 FitEdge Gym. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
